@@ -5,10 +5,7 @@
   "scripts": {
     "dev": "ts-node src/index.ts",
     "build": "tsc",
-    "prisma:generate": "prisma generate",
-    "prepare": "prisma generate",
-    "postinstall": "prisma generate",
-    "vercel-build": "prisma generate && npm run build"
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^6.19.0",
@@ -20,6 +17,7 @@
     "@types/node": "22.18.12",
     "prisma": "^6.19.0",
     "ts-node": "10.9.2",
+    "tsx": "^4.19.2",
     "typescript": "5.8.2"
   }
 }
