@@ -1,5 +1,4 @@
 import prisma from '../lib/prisma'
-import { withAccelerate } from '@prisma/extension-accelerate'
 import express from 'express'
 
 const app = express()
