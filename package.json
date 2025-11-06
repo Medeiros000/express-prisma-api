@@ -4,7 +4,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node src/index.ts",
-    "postinstall": "prisma generate"
+     "build": "tsc",
+     "prisma:generate": "prisma generate",
+     "prepare": "prisma generate",
+     "postinstall": "prisma generate",
+     "vercel-build": "prisma generate && npm run build"
   },
   "dependencies": {
     "@prisma/client": "6.9.0",
